@@ -19,10 +19,30 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "esModuleInterop": true,
+ 	"allowSyntheticDefaultImports": true,
     "lib": [
       "ES2022",
       "dom"
     ]
+    /* https://stackoverflow.com/questions/41307024/absolute-path-in-angular-cli-project */
+    /*,"paths": {
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@services/*": [
+        "src/app/services/*"
+      ],
+      "@model/*": [
+        "src/app/model/*"
+      ],
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@routing/*": [
+        "src/app/routing/*"
+      ]
+    }*/
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -10,7 +10,7 @@ import { MainContentComponent } from './component/main-content/main-content.comp
 @NgModule({
 	declarations: [
 		AppComponent,
-  MainContentComponent
+		MainContentComponent
 	],
 	imports: [
 		BrowserModule,

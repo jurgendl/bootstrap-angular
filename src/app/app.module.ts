@@ -1,11 +1,13 @@
 import {NgModule} from '@angular/core';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import {MaterialModule} from "./material/material.module";
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MaterialModule} from "./material/material.module";
-import { MainContentComponent } from './component/main-content/main-content.component';
+import {MainContentComponent} from './component/main-content/main-content.component';
 
 @NgModule({
 	declarations: [
@@ -17,9 +19,16 @@ import { MainContentComponent } from './component/main-content/main-content.comp
 		AppRoutingModule,
 		BrowserAnimationsModule,
 		MaterialModule,
+		FormsModule,
+		HttpClientModule,
 	],
-	providers: [],
-	bootstrap: [AppComponent]
+	exports: [
+	],
+	providers: [
+	],
+	bootstrap: [
+		AppComponent
+	]
 })
 export class AppModule {
 }
